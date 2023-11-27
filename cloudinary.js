@@ -4,10 +4,10 @@ const cloudinary = require('cloudinary').v2;
 // Return "https" URLs by setting secure: true
 //TODO: Hide this
 cloudinary.config({
-    secure: true,
-    api_key: '948379897124561',
-    api_secret: 'EBo9SoNgV3u56mXgMHv5ng29FbA',
-    cloud_name: 'dz6zr9lxu',
+    secure: process.env.SECURE,
+    api_key: process.env.API_KEY,
+    api_secret: process.env.API_SECRET,
+    cloud_name: process.env.CLOUD_NAME,
 });
 
 // Log the configuration
